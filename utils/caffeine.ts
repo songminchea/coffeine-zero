@@ -30,3 +30,17 @@ export const getTimeUntilSleepReady = (
     const hours = halfLife * Math.log2(currentAmount / targetAmount);
     return parseFloat(hours.toFixed(1));
 };
+
+export interface Drink {
+    name: string;
+    caffeine: number; // mg 기준
+    icon: string;
+}
+
+export const DRINK_PRESETS: Drink[] = [
+    { name: "아메리카노", caffeine: 150, icon: "☕" },
+    { name: "카페라떼", caffeine: 75, icon: "🥛" },
+    { name: "에너지드링크", caffeine: 100, icon: "⚡" },
+    { name: "콜라", caffeine: 35, icon: "🥤" },
+    { name: "녹차", caffeine: 30, icon: "🍃" },
+];
