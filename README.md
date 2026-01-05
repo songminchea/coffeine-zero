@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+☕ 카페인 제로 (Caffeine Zero)
+"지금 마시는 이 커피, 오늘 밤 잠을 방해할까?" > 카페인 배출 시간을 계산해 당신의 꿀잠을 지켜주는 서비스입니다.
 
-## Getting Started
+🌟 이런 고민에서 시작했어요 (기획 배경)
+"오후 3시에 아메리카노 마셔도 밤에 잘 잘 수 있을까?"
 
-First, run the development server:
+"에너지 드링크 마셨는데, 대체 언제쯤 효과가 사라질까?"
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+많은 사람들이 카페인 때문에 밤잠을 설치지만, 정확히 내 몸에 카페인이 언제까지 남아있는지는 모른다는 점에 주목했습니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🎯 무엇을 해주나요? (핵심 기능)
+내 몸속 카페인 실시간 확인: 마신 음료와 시간을 입력하면, 현재 남은 카페인 양을 숫자로 바로 보여줍니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+"언제 잘 수 있을까?" 예측: 카페인이 수면에 방해되지 않을 정도로 배출되는 시각을 계산해서 알려줍니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+한눈에 보는 그래프: 앞으로 시간이 지남에 따라 내 몸의 카페인이 어떻게 줄어드는지 선 그래프로 시각화해줍니다.
 
-## Learn More
+쉬운 선택: 아메리카노, 콜라, 에너지 드링크 등 자주 마시는 음료의 카페인 함량을 미리 저장해 두어 클릭 한 번으로 기록합니다.
 
-To learn more about Next.js, take a look at the following resources:
+🛠 어떤 도구로 만드나요? (기술 스택)
+화면 만들기: 리액트(Next.js) - 최신 웹 기술을 사용해 빠르고 부드러운 화면 제공
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+스타일링: 테일윈드(Tailwind) - 깔끔하고 보기 편한 디자인 적용
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+데이터 시각화: 차트 도구(Recharts) - 카페인 수치를 그래프로 구현
 
-## Deploy on Vercel
+언어: 타입스크립트(TypeScript) - 오류를 미리 방지하는 안정적인 코드 작성
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📅 2주간의 약속 (개발 계획)
+1주차: 카페인 계산 공식 완성 + 음료 입력 화면 만들기
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2주차: 카페인 감소 그래프 구현 + 전체 디자인 다듬기 + 인터넷 배포
