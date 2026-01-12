@@ -3,7 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Caffeine Zero",
-  description: "스마트한 카페인 관리",
+  description: "스마트한 카페인 잔량 관리",
+  icons: {
+    // 절대 경로(C:\...)가 아닌 상대 경로로 작성해야 합니다.
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -12,10 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // suppressHydrationWarning으로 브라우저 확장 프로그램 에러 방지
     <html lang="ko" suppressHydrationWarning>
       <head>
-        {/* 구글 번역기 개입 방지 */}
         <meta name="google" content="notranslate" />
       </head>
       <body suppressHydrationWarning className="antialiased">
